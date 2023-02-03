@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: gray;
+}
+
+nav h1 {
+    font-size: 36px;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: left;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 10px;
+}
+
+
+nav li {
+    padding: 20px;
+}
+
+.navlink {
+    font-size: 20px;
+}
+
+nav li:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
