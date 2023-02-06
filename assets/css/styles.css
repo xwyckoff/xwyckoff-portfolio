@@ -3,33 +3,106 @@ body {
     background-color: lightgray;
 }
 
-header {
-    background-color: gray;
+/* NAVBAR STYLES */
+
+.landingPageImage {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(../images/landingPageImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px;
+}
+
+.landingPageImage h2 {
+    font-size: 36px;
+    color: rgb(78, 78, 78);
+    background-color: lightskyblue;
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color:  rgb(78, 78, 78);
+    margin-bottom: 20px;
 }
 
 nav h1 {
+    background-color: lightskyblue;
+    color: rgb(78, 78, 78);
     font-size: 36px;
+    padding: 10px;
+    padding-left: 100px;
 }
 nav {
     display: flex;
-    justify-content: left;
-    padding: 10px;
+    padding: 30px;
+    padding-left: 0px;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
-    padding: 10px;
 }
 
 .navlink {
-    color:black;
+    color:lightskyblue;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     font-size: 20px;
+    border-bottom: 5px solid lightskyblue;
+    
 
 }
 
 nav a:hover {
-    background-color: lightgray;
+    color: lightgray;
+    border-color: lightgray;
     cursor: pointer;
+}
+
+/* INFO SECTION STYLES */
+
+main {
+    display: flex;
+    color: rgb(78, 78, 78);
+    flex-direction: column;
+    justify-content: center;
+}
+
+section { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px;
+    margin-bottom: 50px;
+}
+
+.sectionTitle {
+    display: flex;
+    font-size: 45px;
+}
+
+.sectionInfo {
+    padding-left: 50px;
+    line-height: 1.5;
+    border-left: 6px solid rgb(78, 78, 78);
+}
+
+.sectionInfo p {
+    margin-bottom: 20px;
+}
+
+#portrait {
+    height: 256px;
+    border-radius: 100%;
+}
+
+#contactInfo {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
