@@ -120,14 +120,21 @@ section {
 
 #apps {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    flex: 1 1 100%;
+    flex: 1 0;
+}
+
+#appRows {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .appCard {
     display: flex;
+    flex-grow: 1;
+    min-width: 30%;
     flex-direction: row;
     justify-content: left;
     padding: 50px;
@@ -140,11 +147,17 @@ section {
 .appCard:hover {
     transition: opacity 1s;
     opacity: 1;
+    cursor: pointer;
 }
 
 .appCard h3, h4{
+    color:rgb(78, 78, 78);
     background-color: lightskyblue;
     padding: 10px;
+}
+
+.appCard h3:visited, h4:visited {
+    color:rgb(78, 78, 78);
 }
 
 .appCard h3 {
@@ -162,5 +175,4 @@ section {
 
 #testApp {
     background-image: url("../images/landingPageImage.jpeg");
-    max-width: 50%;
 }
