@@ -117,3 +117,50 @@ section {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#apps {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex: 0 1 100%;
+    flex-wrap: wrap;
+}
+
+.appCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 50px;
+    padding-left: 0px;
+    border: 5px solid lightskyblue;
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.appCard:hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.appCard h3, h4{
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+.appCard h3 {
+    font-size: 24px;
+}
+
+.appCard h4 {
+    font-size: 12px;
+}
+
+#semanticChallenge {
+    background-image: url("../images/semanticChallenge.png");
+    min-height: 500px;
+}
+
+#testApp {
+    background-image: url("../images/landingPageImage.jpeg");
+    max-width: 50%;
+}
